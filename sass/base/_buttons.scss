@@ -1,0 +1,22 @@
+.button-info {
+    @include font ($size: 1.6rem, $height: 2.2rem, $weight: bold, $style: normal);
+    border-radius: 4px;
+    margin-top: 45px;
+}
+.button_colored {
+    width: 174px;
+    height: 53px;
+    margin-right: 45px;
+    background: $color-brand;
+    color: $color-light;
+    border: 1px solid $color-brand;
+    &:hover {
+        background: $color-additional;
+        cursor: pointer;
+    }
+}
+.button-benefits {
+    @include font ($size: 1.6rem, $height: 2.2rem, $weight: bold, $style: normal);
+    border-radius: 4px;
+    margin: 60px 0 0 0;
+}

@@ -1,0 +1,41 @@
+
+.info-elements {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    @extend %font-add;
+    & .info-title h1 {
+        padding-top: 75px;
+        @include font ($size: 4.4rem, $height: 5.4rem, $weight: bold, $style: normal);
+    }
+    & .info-subtitle {
+        @include font ($size: 1.8rem, $height: 2.8rem, $weight: normal, $style: normal);   
+    }
+    & .info-buttons {
+        display: flex;
+        & .button-underline {
+            border: none;
+        }
+        & span {
+            margin: 62px 9px 0 0;
+        }
+        & a {
+            @include font ($size: 1.6rem, $height: 2.4rem, $weight: 600, $style: normal);
+            color: $color-brand;
+            margin-top: 60px;
+            &:hover {
+                color: $color-additional;
+            }
+        }
+    }
+    & .info-rightblock img {
+      
+    }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,59 @@
+// Section Header
+.section-header {
+    @extend %shadow;
+}
+.header-elements {
+    display: flex;
+    justify-content: space-between;
+    & .header-logo {
+        padding: 25px 0 24px 0;
+    }
+    & .header-links {
+        padding: 32px 0 26px 0;
+        display: flex;
+        list-style: none; 
+        &:hover {
+            cursor: pointer;
+        }
+        & li {
+            padding-left: 17px;
+        }
+        & .activelink {
+            color: $color-brand;
+        }
+    }
+    & .header-buttons {
+        padding: 15px 0 17px 0;
+        & .button {
+            width: 105px;
+            height: 46px;
+            border-radius: 4px;
+            @include font (1.6rem, 2.2rem, 600, normal);
+            color: $color-button-font;
+            &:hover {
+                cursor: pointer;
+                @extend %transition;
+            }
+        }
+        & .button_bordered {
+            border: 1px solid $color-borders;
+            &:hover {
+                background: $color-borders;
+            }
+        }
+        & .button_colored {
+            color: $color-light;
+            border: 1px solid $color-brand;
+            background: $color-brand;
+            margin-left: 15px;
+            &:hover {
+                background: $color-additional;
+            }
+        }  
+        
+    }
+}
+
+
+
+

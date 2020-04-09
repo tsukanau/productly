@@ -1,0 +1,24 @@
+.tags {
+    display: flex;
+    >* {
+        margin-right: 7px;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
+.tag { 
+    border-radius: 90px;
+    padding: 0 14px;
+    @include font ($size: 1.3rem, $height: 2.8rem, $weight: normal, $style: normal);
+    &_selected {
+        color: $color-light;
+        background-color: $color-brand;
+    }
+    &_bordered {
+        border: 1px solid $color-tag;
+    }
+    &_colored {
+        background: $color-tag-inside;
+    }
+}

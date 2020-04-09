@@ -1,0 +1,13 @@
+.layout-4columns {
+    @include columns ($width: 21%);
+     margin-right: 50px;
+     margin: auto;
+ }
+ .layout-3columns {
+    @include columns ($width: 30%);
+     margin: auto;
+ }
+ .layout-2columns {
+     @include columns ($width: 45%);
+     margin: auto;
+ }
