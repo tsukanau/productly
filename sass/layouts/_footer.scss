@@ -1,0 +1,23 @@
+.footer-wrapper {
+    padding: 60px 0 72px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-navigation {
+    flex-grow: 1;
+    padding-left: 152px;
+}
+.footer-navigation__title {
+    margin: 0 0 15px 0;
+}
+.footer-navigation__links {
+    @extend %font-add;
+    a {
+        color: $color-text;
+        @include font ($size: 1.6rem, $height: 3.5rem, $weight: normal, $style: normal);
+        @extend %transition;
+        &:hover {
+            color: $color-brand;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.aboutus-subtitle {
+    padding: 14px 0 45px 0;
+}
+.aboutus-layout {
+    >* {
+        @extend %shadow;
+    }
+    padding: 0 0 100px 0;
+    & .aboutus-person {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 20px 25px 20px;
+    }
+    & .employee__photo {
+        width: 98px;
+        height: 98px;
+        border-radius: 50%;
+    }
+    & .employee__content {
+        padding: 12px 0 0 0;
+    }
+    & .employee__title {
+        @include font ($size: 1.4rem, $height: 2.6rem, $weight: normal, $style: normal);
+    }
+    & .employee__contact {
+        @include font ($size: 1.4rem, $height: 2.6rem, $weight: normal, $style: normal);
+    }
+}
+
+
+

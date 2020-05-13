@@ -8,6 +8,10 @@
      margin: auto;
  }
  .layout-2columns {
-     @include columns ($width: 45%);
+     @include columns ($width: 49%);
      margin: auto;
+ }
+ .layout-contactus {
+    @include columns ($width: 46%);
+    margin: auto;
  }

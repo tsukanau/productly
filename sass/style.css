@@ -1,8 +1,8 @@
-.header-elements .header-buttons .button:hover {
+.footer-navigation__links a, .header-elements .header-buttons .button:hover {
   transition: all 0.3s;
 }
 
-.aboutus-layout > *, .strategies-wrapper > *, .strategies-blockshadow, .section-header {
+.aboutus-layout > *, .strategies-wrapper > *, .section-header {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
 }
 
@@ -10,7 +10,7 @@ body {
   font-family: "Open Sans", Verdana, sans-serif;
 }
 
-.info-elements {
+.footer-navigation__links, .info-elements {
   font-family: "Poppins", Verdana, sans-serif;
 }
 
@@ -454,6 +454,7 @@ h2 {
   font-size: 3.4rem;
   line-height: 4.6rem;
   color: #2F281E;
+  margin: 0;
 }
 
 h3 {
@@ -462,6 +463,7 @@ h3 {
   font-size: 2.4rem;
   line-height: 3.4rem;
   color: #2F281E;
+  margin: 0;
 }
 
 h4 {
@@ -470,6 +472,15 @@ h4 {
   font-size: 2.2rem;
   line-height: 3rem;
   color: #2F281E;
+  margin: 0;
+}
+
+h5 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  margin: 0;
 }
 
 p {
@@ -478,6 +489,12 @@ p {
   font-size: 1.6rem;
   line-height: 2.6rem;
   color: #544837;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  margin: 0;
 }
 
 .logo-svg:hover {
@@ -516,6 +533,16 @@ p {
   line-height: 2.2rem;
   border-radius: 4px;
   margin: 60px 0 0 0;
+}
+
+.button-contacts {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  border-radius: 4px;
+  width: 105px;
+  height: 46px;
 }
 
 .tags {
@@ -612,6 +639,10 @@ p {
   justify-content: space-between;
   padding-top: 30px;
 }
+.info-elements .info-leftblock {
+  max-width: 470px;
+  margin-right: 40px;
+}
 .info-elements .info-title h1 {
   padding-top: 75px;
   font-style: normal;
@@ -641,10 +672,16 @@ p {
   line-height: 2.4rem;
   color: #FF9900;
   margin-top: 60px;
+  text-decoration: underline;
 }
 .info-elements .info-buttons a:hover {
   color: #FF7549;
 }
+.info-elements .info-rightblock img {
+  max-width: 100%;
+  display: block;
+}
+
 .layout-4columns {
   display: flex;
   flex-wrap: wrap;
@@ -673,7 +710,17 @@ p {
   margin: auto;
 }
 .layout-2columns > * {
-  flex-basis: 45%;
+  flex-basis: 49%;
+}
+
+.layout-contactus {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+}
+.layout-contactus > * {
+  flex-basis: 46%;
 }
 
 .benefits__wrapper {
@@ -703,15 +750,13 @@ p {
 }
 
 .section-strategies {
-  padding: 30px 0 0 0;
+  padding: 30px 0 65px 0;
 }
-
-.strategies-blockshadow {
-  border-radius: 8px;
+.section-strategies .strategies__description {
+  padding: 14px 0 24px 0;
 }
-
-.strategies-tags {
-  padding: 0 0 24px 0;
+.section-strategies .strategies__tags {
+  padding: 0 0 31px 0;
 }
 
 .strategies-wrapper > * {
@@ -719,11 +764,158 @@ p {
 }
 
 .strategy__content {
-  padding: 24px 33px 26px 33px;
+  padding: 22px 34px 26px 33px;
 }
 
-.strategy__name {
-  margin: 0 0 30px;
+.strategy__tags {
+  padding: 29px 0 0 0;
+}
+
+.aboutus-subtitle {
+  padding: 14px 0 45px 0;
+}
+
+.aboutus-layout {
+  padding: 0 0 100px 0;
+}
+.aboutus-layout .aboutus-person {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 25px 20px;
+}
+.aboutus-layout .employee__photo {
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+}
+.aboutus-layout .employee__content {
+  padding: 12px 0 0 0;
+}
+.aboutus-layout .employee__title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+}
+.aboutus-layout .employee__contact {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+}
+
+.section-contactus {
+  background-color: #FFEEE1;
+}
+.section-contactus .layout-contactus {
+  display: flex;
+}
+.section-contactus .contactus-wrapper {
+  padding: 62px 0 82px 0;
+}
+.section-contactus .contactus_title {
+  padding: 0 0 27px 0;
+}
+.section-contactus .contactus-leftblock .contactus-info {
+  padding: 0 0 50px 0;
+}
+.section-contactus .contactus-rightblock input, .section-contactus .contactus-rightblock textarea {
+  border: none;
+  margin: 0 0 20px 0;
+}
+.section-contactus .contactus-rightblock input:focus, .section-contactus .contactus-rightblock textarea:focus {
+  border: 1px solid #FF9900;
+  outline: none;
+}
+.section-contactus .contactus-rightblock input {
+  height: 45px;
+  border-radius: 5px;
+}
+.section-contactus .contactus-rightblock input::-webkit-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #C6C6C6;
+  padding: 10px 0 0 21px;
+}
+.section-contactus .contactus-rightblock input::-moz-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #C6C6C6;
+  padding: 10px 0 0 21px;
+}
+.section-contactus .contactus-rightblock textarea {
+  width: 100%;
+  height: 159px;
+  resize: none;
+}
+.section-contactus .contactus-rightblock textarea::-webkit-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #C6C6C6;
+  padding: 10px 0 0 21px;
+}
+.section-contactus .contactus-rightblock textarea::-moz-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #C6C6C6;
+  padding: 10px 0 0 21px;
+}
+.section-contactus .contact-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.5rem;
+  line-height: 2.6rem;
+}
+.section-contactus .contact-link a {
+  color: #544837;
+}
+
+.contactus-links li {
+  list-style-image: url("../assets/Pics/ContactUs/union.svg");
+  margin-top: 20px;
+}
+
+.commonlink {
+  display: flex;
+  margin-bottom: 19px;
+}
+
+.commonlink span {
+  margin-right: 11px;
+}
+
+.footer-wrapper {
+  padding: 60px 0 72px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-navigation {
+  flex-grow: 1;
+  padding-left: 152px;
+}
+
+.footer-navigation__title {
+  margin: 0 0 15px 0;
+}
+
+.footer-navigation__links a {
+  color: #544837;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 3.5rem;
+}
+.footer-navigation__links a:hover {
+  color: #FF9900;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,67 @@
+.section-contactus {
+    background-color: $color-background;
+    & .layout-contactus {
+        display: flex;
+    }
+    & .contactus-wrapper {
+        padding: 62px 0 82px 0;
+    }
+    & .contactus_title {
+       padding: 0 0 27px 0;
+    } 
+    & .contactus-leftblock {
+        & .contactus-info {
+            padding: 0 0 50px 0;
+        }
+    }
+    & .contactus-rightblock {
+        
+        & input, textarea {
+            border: none;
+            margin: 0 0 20px 0;
+            &:focus {
+                border: 1px solid $color-brand;
+                outline: none;
+            }
+        }
+        & input {
+            height: 45px;
+            border-radius: 5px;
+        }
+        & input::-webkit-input-placeholder {
+            @include formplaceholder ($color: $color-placeholder, $size: 1.6rem, $height: 2.6rem, $weight: normal, $style: normal);
+        }
+        & input::-moz-placeholder {
+            @include formplaceholder ($color: $color-placeholder, $size: 1.6rem, $height: 2.6rem, $weight: normal, $style: normal);
+        }
+        & textarea {
+            width: 100%;
+            height: 159px;
+            resize: none;
+        }
+        & textarea::-webkit-input-placeholder {
+            @include formplaceholder ($color: $color-placeholder, $size: 1.6rem, $height: 2.6rem, $weight: normal, $style: normal);
+        }
+        & textarea::-moz-placeholder {
+            @include formplaceholder ($color: $color-placeholder, $size: 1.6rem, $height: 2.6rem, $weight: normal, $style: normal);
+        }
+}
+.contact-link {
+    @include font ($size: 2.5rem, $height: 2.6rem, $weight: normal, $style: normal);
+    
+}
+.contact-link a {
+    color: $color-text;
+}
+}
+.contactus-links li {
+    list-style-image: url('../assets/Pics/ContactUs/union.svg');
+    margin-top: 20px;
+}
+.commonlink {
+    display: flex;
+    margin-bottom: 19px;
+}
+.commonlink span {
+    margin-right: 11px;
+}
