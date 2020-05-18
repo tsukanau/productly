@@ -1,5 +1,8 @@
 .section-strategies {
     padding: 30px 0 65px 0;
+    @include media-tablet {
+        
+    } 
     & .strategies__description {
         padding: 14px 0 24px 0;
     }
@@ -7,14 +10,37 @@
         padding: 0 0 31px 0;
     }
 }
+.strategy {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    @include media-tablet {
+        overflow: hidden;
+    }
+
+}
 .strategies-wrapper {
     >*{
         @extend %shadow;
         margin-bottom: 30px;
+        @include media-tablet {
+            flex-basis: 49%;
+        }
+        @include media-mobile {
+            flex-basis: 100%;
+        }
     }
 }
 .strategy__content {
     padding: 22px 34px 26px 33px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.strategy__name {
+    text-align: left;
+    flex-grow: 1;    
 }
 .strategy__tags {
     padding: 29px 0 0 0;

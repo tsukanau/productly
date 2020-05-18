@@ -1,41 +1,81 @@
+.section-info {
+    overflow: hidden;
+}
 .info-elements {
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
+    @include media-mobile {
+        flex-direction: column-reverse;
+    }
     @extend %font-add;
     & .info-leftblock {
         max-width: 470px;
         margin-right: 40px;
+        @include media-tablet {
+            margin-right: 0;
+        }
     }
     & .info-title h1 {
         padding-top: 75px;
         @include font ($size: 4.4rem, $height: 5.4rem, $weight: bold, $style: normal);
+        @include media-mobile {
+            @include font ($size: 3.2rem, $height: 4.2rem, $weight: bold, $style: normal);
+            padding-top: 16px;
+            text-align: center;
+        }
     }
     & .info-subtitle {
-        @include font ($size: 1.8rem, $height: 2.8rem, $weight: normal, $style: normal);   
+        @include font ($size: 1.8rem, $height: 2.8rem, $weight: normal, $style: normal);
+        @include media-tablet {
+            width: 380px;
+        }   
+        @include media-mobile {
+            @include font ($size: 1.6rem, $height: 2.4rem, $weight: normal, $style: normal);
+            width: auto;
+            text-align: center;
+        }
     }
     & .info-buttons {
         display: flex;
+        @include media-mobile {
+            flex-direction: column;
+            align-items: center;
+            
+        }
         & .button-underline {
             border: none;
         }
-        & span {
-            margin: 62px 9px 0 0;
-        }
+        & .ico_play {
+            width: 18px;
+            height: 19px;
+            vertical-align: sub;
+            margin-right: 9px;
+        } 
         & a {
             @include font ($size: 1.6rem, $height: 2.4rem, $weight: 600, $style: normal);
             color: $color-brand;
             margin-top: 60px;
             text-decoration: underline;
+            @include media-mobile {
+                margin-top: 25px;
+
+            }
             &:hover {
                 color: $color-additional;
             }
         }
     }
     & .info-rightblock img {
-      max-width: 100%;
       display: block;
+      @include media-mobile {
+          max-width: 100%;
+      }
     }
+}
+.link-button {
+    white-space: nowrap;
+    display: flex;
 }
 
 

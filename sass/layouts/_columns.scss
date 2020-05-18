@@ -1,17 +1,26 @@
 .layout-4columns {
     @include columns ($width: 21%);
-     margin-right: 50px;
-     margin: auto;
+    @include media-mobile {
+        flex-direction: column;
+        text-align: center;
+        >* {
+            margin-bottom: 47px;
+        }
+    }
  }
  .layout-3columns {
     @include columns ($width: 30%);
-     margin: auto;
+     
+    @include media-laptop {
+       
+    }
  }
  .layout-2columns {
-     @include columns ($width: 49%);
-     margin: auto;
+    @include columns ($width: 49%);
+    
+
  }
  .layout-contactus {
     @include columns ($width: 46%);
-    margin: auto;
+   
  }

@@ -11,16 +11,19 @@
 <body>
 <!-- Header -->
     <header class="section-outer section-header">
-        <div class="wrapper">
+        <div class="wrapper header-wrapper">
             <div class="header-elements">
             <div class="header-logo">
+                <span class="header__hamburger hamburger"><span class="hamburger__line"></span></span>
                 <img class="logo-object" src="assets/Pics/Header/Logo.svg" alt="logo">    
             </div>
+            <div class="header-navigation">
             <div class="header-links">
                 <li class="activelink">Home</li>
                 <li>Services</li>
                 <li>About</li>
                 <li>Product</li>
+            </div>
             </div>
             <div class="header-buttons">
                     <button class="button button_bordered">Sign In</button>
@@ -38,9 +41,15 @@
                 <div class="info-subtitle">Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</div>
                 <div class="info-buttons">
                     <button class="button-info button_colored">Get Started</button>
-                    <span class="ico-play"><img src="assets/Pics/Info/linkplay.svg" alt="play"></span>
-                    <a href="">Watch the Video</a>
-                   
+
+                    <!-- <span class="ico-play"><img src="assets/Pics/Info/linkplay.svg" alt="play"></span>
+                    <a href="">Watch the Video</a> -->
+
+
+                    <a href="#" class="link-button">
+                        <span class="ico ico_play"><img src="../productly1/assets/Pics/Info/linkplay.svg" alt="ico-play"></span>
+                        <span class="link-button__text">Watch the Video</span>
+                    </a>
                     
                 </div>
             </div>
@@ -57,25 +66,25 @@
         <div class="wrapper benefits__wrapper">
             <div class="benefits-elements">
             <div class="benefits-title"><h2>We design tools to unveil your superpowers</h2></div>
-            <div class="layout-4columns">
-                <div class="benefits-box_first">
+            <div class="layout-4columns benefits-wrapper">
+                <div class="benefits-box box_first">
                     <img src="assets/Pics/Benefits/icon violet.svg" alt="benefits">
                     <div class="boxtitle"><h4>First click tests</h4></div>
                     <div class="boxsubtitle"><p>While most people enjoy
                         casino gambling</p></div>
                 </div>
-                <div class="benefits-box_second">
+                <div class="benefits-box box_second">
                     <img src="assets/Pics/Benefits/icon yellow.svg" alt="benefits">
                     <div class="boxtitle"><h4>Design surveys</h4></div>
                     <div class="boxsubtitle"><p>Sports betting, lottery and bingo playing for the fun</p></div>
                 </div>
-                <div class="benefits-box_third">
+                <div class="benefits-box box_third">
                     <img src="assets/Pics/Benefits/icon red.svg" alt="benefits">
                     <div class="boxtitle"><h4>Preference tests</h4></div>
                     <div class="boxsubtitle"><p>The Myspace page defines
                         the individual.</p></div>
                 </div>
-                <div class="benefits-box_fourth">
+                <div class="benefits-box box_fourth">
                     <img src="assets/Pics/Benefits/icon blue.svg" alt="benefits">
                     <div class="boxtitle"><h4>Five second tests</h4></div>
                     <div class="boxsubtitle"><p>Personal choices and the overall personality of the person. </p></div>
@@ -235,7 +244,7 @@
 <!-- About Us -->
 <!-- Contact Us -->
     <section class="section-outer section-contactus">
-        <div class="wrapper contactus-wrapper">
+        <div class="wrapper">
             <div class="contactus_title"><h2>Contact Us</h2></div>
             <div class="layout-contactus">
             <div class="contactus-leftblock">
@@ -252,14 +261,17 @@
             </div>
 
             <div class="contactus-rightblock">
-                <form action="">
-                        <div class="layout-2columns">
+                <form class="contactus-form" action="">
+                        <div class="layout-2columns form-columns">
                         <input type="text" name="name" placeholder="Your name">
                         <input type="email" name="mail" placeholder="Your email">
                         </div>
                         
                         <textarea name="subject" placeholder="What do you want to ask?"></textarea><br>
-                        <button class="button-contacts button_colored">Send</button>
+                        <div class="contactus-button">
+                            <button class="button-contacts button_colored">Send</button>
+                        </div>
+                        
                         
                 </form>
             </div>

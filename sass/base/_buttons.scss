@@ -2,6 +2,9 @@
     @include font ($size: 1.6rem, $height: 2.2rem, $weight: bold, $style: normal);
     border-radius: 4px;
     margin-top: 45px;
+    @include media-mobile {
+        margin-top: 25px;
+    }
 }
 .button_colored {
     width: 174px;
@@ -10,6 +13,9 @@
     background: $color-brand;
     color: $color-light;
     border: 1px solid $color-brand;
+    @include media-mobile {
+        margin-right: 0px;
+    }
     &:hover {
         background: $color-additional;
         cursor: pointer;
@@ -18,11 +24,14 @@
 .button-benefits {
     @include font ($size: 1.6rem, $height: 2.2rem, $weight: bold, $style: normal);
     border-radius: 4px;
-    margin: 60px 0 0 0;
+    margin: 0;
 }
 .button-contacts {
     @include font ($size: 1.6rem, $height: 2.2rem, $weight: bold, $style: normal);
     border-radius: 4px;
-    width: 105px;
+    width: 117px;
     height: 46px;
+    @include media-tablet { 
+        margin: 0;
+    }
 } 

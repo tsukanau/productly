@@ -1,24 +1,42 @@
 .section-contactus {
+    padding: 62px 0 82px 0;
     background-color: $color-background;
-    & .layout-contactus {
-        display: flex;
+    @include media-tablet {
+        padding: 34px 0 50px 0;
     }
-    & .contactus-wrapper {
-        padding: 62px 0 82px 0;
+    & .layout-contactus {
+        display: flex; 
+        @include media-tablet {
+            flex-direction: column;
+        }
     }
     & .contactus_title {
        padding: 0 0 27px 0;
+       @include media-tablet {
+           text-align: center;
+           padding: 0 0 17px 0;    
+       }
+       @include media-mobile {
+        padding: 0 0 8px 0; 
+       }
     } 
     & .contactus-leftblock {
         & .contactus-info {
             padding: 0 0 50px 0;
+            @include media-tablet {
+                text-align: center;
+                padding: 0 0 24px 0;
+            }
         }
+        // info below
     }
     & .contactus-rightblock {
-        
         & input, textarea {
             border: none;
             margin: 0 0 20px 0;
+            @include media-mobile {
+                margin: 0 0 16px 0;
+            }
             &:focus {
                 border: 1px solid $color-brand;
                 outline: none;
@@ -46,9 +64,13 @@
             @include formplaceholder ($color: $color-placeholder, $size: 1.6rem, $height: 2.6rem, $weight: normal, $style: normal);
         }
 }
+
+
+
+
+
 .contact-link {
     @include font ($size: 2.5rem, $height: 2.6rem, $weight: normal, $style: normal);
-    
 }
 .contact-link a {
     color: $color-text;
@@ -57,11 +79,41 @@
 .contactus-links li {
     list-style-image: url('../assets/Pics/ContactUs/union.svg');
     margin-top: 20px;
+    @include media-tablet {
+
+    }
+    @include media-mobile {
+
+    }
 }
+
+
+
+
 .commonlink {
     display: flex;
     margin-bottom: 19px;
+    @include media-tablet {
+        justify-content: center;
+    }
+    @include media-mobile {
+        margin-bottom: 15px;
+    }
 }
 .commonlink span {
     margin-right: 11px;
 }
+.form-columns {
+    display: flex;
+    >* {
+        flex-basis: 100%;
+    }
+}
+.contactus-button {
+    @include media-tablet {
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
