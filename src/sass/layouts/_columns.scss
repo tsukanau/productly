@@ -10,9 +10,11 @@
  }
  .layout-3columns {
     @include columns ($width: 30%);
-     
-    @include media-laptop {
-       
+
+    &:after {
+      content: '';
+      width: 30%;
+      display: block;
     }
  }
  .layout-2columns {

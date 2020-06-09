@@ -40,6 +40,7 @@
 }
 
 .benefits-wrapper {
+    padding-bottom: 34px;
     @include media-laptop {
         flex-wrap: wrap; 
     }
